@@ -4,22 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#ffffff" />
-  <meta name="description" content="高麵包｜擁有 14 年數位設計經驗，專注 UI/UX、品牌數位體驗與 AI 輔助設計流程，打造兼具美感、易用性與商業價值的數位體驗。" />
+  <meta name="color-scheme" content="light" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="description" content="高麵包（鍾皓軒）擁有 14 年數位設計經驗，專注 UI/UX、品牌網站、數位產品體驗與 AI 輔助設計流程，打造兼具美感、易用性與商業價值的數位體驗。" />
   <meta property="og:title" content="高麵包｜UI/UX × AI 數位品牌體驗" />
   <meta property="og:description" content="以設計洞察品牌，以 AI 擴展創意，打造更有價值的數位體驗。" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="高麵包｜UI/UX × AI 數位品牌體驗" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="高麵包｜UI/UX × AI 數位品牌體驗" />
+  <meta name="twitter:description" content="UI/UX、品牌網站、數位產品體驗與 AI 輔助設計流程。" />
   <title>高麵包｜UI/UX × AI 數位品牌體驗</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { brand: { navy: '#163B73', blue: '#2563EB', purple: '#7C3AED', mint: '#10B981', white: '#FFFFFF', surface: '#F8FAFC', ink: '#142238', pale: '#EAF2FF' } },
-          fontFamily: { sans: ['Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'sans-serif'] }
-        }
-      }
-    };
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "鍾皓軒",
+      "alternateName": "高麵包",
+      "jobTitle": "UI/UX 設計師・數位產品設計",
+      "description": "專注 UI/UX、品牌數位體驗與 AI 輔助設計流程的數位設計師。",
+      "knowsAbout": ["UI/UX 設計", "品牌網站", "數位產品設計", "資訊架構", "AI 輔助設計"],
+      "sameAs": [
+        "https://www.facebook.com/MarketingDataScienceTMR/",
+        "https://www.linkedin.com/in/howardzhong/",
+        "https://github.com/HowardNTUST"
+      ]
+    }
   </script>
   <script>document.documentElement.classList.add('js');</script>
   <style>
@@ -44,12 +60,14 @@
     html { scroll-behavior: smooth; scroll-padding-top: 88px; }
     body {
       margin: 0; color: var(--ink); background: var(--white);
-      font-family: Inter, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+      font-family: "Noto Sans TC", Inter, "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
       line-height: 1.7; -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
       overflow-x: clip;
     }
     body.menu-open { overflow: hidden; }
     a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; }
     button, a { -webkit-tap-highlight-color: transparent; }
     button { font: inherit; }
     a:focus-visible, button:focus-visible { outline: 3px solid rgba(37,99,235,.5); outline-offset: 4px; }
@@ -165,6 +183,8 @@
     .about-visual { position: sticky; top: 115px; }
     .profile-card { position: relative; overflow: hidden; border: 1px solid #e6ebf5; border-radius: 26px; padding: 27px; background: linear-gradient(145deg, #fff 0%, #f7f9ff 100%); box-shadow: 0 18px 45px rgba(42,61,105,.05); }
     .profile-card::after { content: ""; position: absolute; right: -56px; top: -56px; width: 190px; height: 190px; border-radius: 50%; background: radial-gradient(circle, rgba(147,197,253,.35), rgba(196,181,253,.12) 60%, transparent 70%); }
+    .profile-photo { position: relative; z-index: 1; aspect-ratio: 2 / 3; margin: -8px -8px 24px; overflow: hidden; border-radius: 19px; background: var(--ink); box-shadow: 0 13px 28px rgba(20,34,56,.18); }
+    .profile-photo img { width: 100%; height: 100%; display: block; object-fit: contain; object-position: center; }
     .profile-top { display: flex; align-items: center; gap: 15px; position: relative; z-index: 1; }
     .profile-avatar { width: 62px; height: 62px; display: grid; place-items: center; flex-shrink: 0; border-radius: 21px; color: white; background: linear-gradient(135deg, #2563eb, #8b5cf6); font-size: 26px; font-weight: 900; box-shadow: 0 10px 20px rgba(79,70,229,.19); }
     .profile-name { font-size: 23px; font-weight: 850; letter-spacing: -.06em; margin: 0; }
@@ -252,6 +272,21 @@
     .template-badge { flex-shrink: 0; border: 1px solid #e5eaf3; border-radius: 999px; padding: 5px 8px; color: #78869b; background: #fafbfe; font-size: 9px; font-weight: 750; }
     .works-note { margin-top: 30px; font-size: 11px; color: #8792a5; display: flex; align-items: center; gap: 9px; }
     .works-note svg { width: 16px; height: 16px; flex-shrink: 0; color: #7b8bab; }
+
+    /* Project moments gallery */
+    .moments-section { padding-top: 16px; }
+    .moments-panel { padding: clamp(26px, 4vw, 42px); border: 1px solid var(--line); border-radius: 28px; background: linear-gradient(145deg, var(--surface), var(--white)); }
+    .moments-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+    .moments-head h2 { margin: 10px 0 0; color: var(--ink); font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.2; letter-spacing: -.055em; }
+    .moments-head p { max-width: 390px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .moments-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 124px; gap: 14px; }
+    .moment-card { position: relative; grid-column: span 3; grid-row: span 2; min-width: 0; overflow: hidden; border-radius: 17px; background: var(--navy); box-shadow: 0 9px 22px rgba(22,59,115,.1); }
+    .moment-card:nth-child(1), .moment-card:nth-child(4) { grid-column: span 6; }
+    .moment-card img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s var(--ease); }
+    .moment-card:nth-child(1) img, .moment-card:nth-child(4) img { object-position: center 42%; }
+    .moment-card::after { content: ""; position: absolute; inset: 42% 0 0; background: linear-gradient(180deg, transparent, rgba(20,34,56,.78)); pointer-events: none; }
+    .moment-card:hover img { transform: scale(1.045); }
+    .moment-caption { position: absolute; z-index: 1; right: 16px; bottom: 13px; left: 16px; color: var(--white); font-size: 11px; font-weight: 800; letter-spacing: .03em; text-shadow: 0 1px 8px rgba(20,34,56,.45); }
 
     /* Process */
     .process-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
@@ -407,6 +442,7 @@
       .service-grid { gap: 14px; }.service-card { padding: 23px; }
       .process-list { grid-template-columns: repeat(3, 1fr); row-gap: 34px; }.process-list::before { display: none; }
       .process-step { border-left: 1px solid #dfe7f6; padding-left: 17px; }.process-number { margin-left: -17px; }
+      .moments-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }.moment-card, .moment-card:nth-child(1), .moment-card:nth-child(4) { grid-column: auto; grid-row: auto; }
       .ai-grid { grid-template-columns: 1fr; gap: 42px; }.ai-visual { max-width: 600px; width: 100%; margin-inline: auto; }
       .insights-grid { grid-template-columns: repeat(2, 1fr); }
       .solutions-grid { grid-template-columns: 1fr; }.solution-card { min-height: auto; }
@@ -438,6 +474,7 @@
       .works-grid { grid-template-columns: 1fr; gap: 31px; }.work-card, .work-card:first-child, .work-card:nth-child(2) { grid-column: auto; }
       .work-visual { aspect-ratio: 1.18 / 1; padding: 11px; }.mock-hero { padding: 13px 12px 10px; }.mock-title-lines i { height: 7px; }.mock-abstract::before { width: 58px; height: 58px; }.mock-abstract::after { width: 80px; height: 34px; }.media-feature { margin-top: 12px; }.media-art { height: 78px; }.media-cards { margin-top: 11px; }.campaign-copy { padding: 14px 4px 8px 11px; }.campaign-package { width: 78px; }
       .work-card h3 { font-size: 18px; }.work-meta { gap: 9px; }.template-badge { font-size: 8px; }
+      .moments-section { padding-top: 0; }.moments-panel { padding: 24px 18px; border-radius: 22px; }.moments-head { align-items: start; flex-direction: column; gap: 10px; }.moments-grid { grid-template-columns: 1fr; grid-auto-rows: 190px; gap: 11px; }.moment-card, .moment-card:nth-child(1), .moment-card:nth-child(4) { grid-column: auto; grid-row: auto; }
       .process-list { grid-template-columns: repeat(2, 1fr); gap: 29px 10px; }.process-step p { max-width: 190px; }
       .ai-panel { padding: 14px; border-radius: 21px; }.flow-node { padding: 10px; gap: 9px; }.flow-node-tag { display: none; }
       .insights-grid { grid-template-columns: 1fr; }.insight-card { min-height: 220px; }
@@ -515,7 +552,8 @@
         <div class="about-grid">
           <aside class="about-visual reveal" aria-label="個人專業摘要">
             <div class="profile-card">
-              <div class="profile-top"><div class="profile-avatar" aria-hidden="true">高</div><div><h3 class="profile-name">高麵包</h3><div class="profile-role">UI/UX 設計師・數位產品設計</div></div></div>
+              <div class="profile-photo"><img src="作品集/鍾皓軒-headshot-01.jpg" alt="鍾皓軒個人肖像" width="3280" height="4928" loading="lazy" decoding="async" /></div>
+              <div class="profile-top"><div><h3 class="profile-name">高麵包</h3><div class="profile-role">UI/UX 設計師・數位產品設計</div></div></div>
               <div class="profile-rule"></div>
               <div class="profile-detail"><span>現職</span><span>聯經數位股份有限公司</span></div>
               <div class="profile-detail"><span>設計經驗</span><span>14 年數位設計經驗</span></div>
@@ -568,6 +606,23 @@
           </article>
         </div>
         <div class="works-note reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg><span>以上介面皆為網站內自製的視覺示意，並非已公開的客戶案例。正式作品可再替換為取得授權的專案圖片、說明與連結。</span></div>
+      </div>
+    </section>
+
+    <!-- Project moments -->
+    <section class="section moments-section" aria-labelledby="momentsTitle">
+      <div class="container">
+        <div class="moments-panel reveal">
+          <div class="moments-head"><div><span class="eyebrow">PROJECT MOMENTS</span><h2 id="momentsTitle">在現場，把複雜的事<br><span class="accent">說得更清楚。</span></h2></div><p>從舞台發表到企業培訓，這些影像記錄了我與團隊、學員在專案現場共同推進的時刻。</p></div>
+          <div class="moments-grid">
+            <figure class="moment-card"><img src="作品集/國科會-expo-stage-01.jpg" alt="國科會活動現場的舞台分享" width="661" height="463" loading="lazy" decoding="async" /><figcaption class="moment-caption">國科會｜活動現場</figcaption></figure>
+            <figure class="moment-card"><img src="作品集/台灣 Top3 IC設計-expo-stage-02.jpg" alt="台灣 Top3 IC 設計業的舞台發表現場" width="564" height="463" loading="lazy" decoding="async" /><figcaption class="moment-caption">台灣 Top3 IC 設計業｜舞台發表</figcaption></figure>
+            <figure class="moment-card"><img src="作品集/工研院-training-classroom-02.png" alt="工研院專案培訓現場" width="720" height="432" loading="lazy" decoding="async" /><figcaption class="moment-caption">工研院｜專案培訓</figcaption></figure>
+            <figure class="moment-card"><img src="作品集/資策會-training-classroom-03.png" alt="資策會專案培訓現場" width="1920" height="1153" loading="lazy" decoding="async" /><figcaption class="moment-caption">資策會｜專案培訓</figcaption></figure>
+            <figure class="moment-card"><img src="作品集/台灣 Top3 電信業-training-classroom-01.png" alt="台灣 Top3 電信業專案培訓現場" width="350" height="210" loading="lazy" decoding="async" /><figcaption class="moment-caption">台灣 Top3 電信業｜專案培訓</figcaption></figure>
+            <figure class="moment-card"><img src="作品集/台灣 Top3 航空業-training-classroom-04.png" alt="台灣 Top3 航空業專案培訓現場" width="720" height="432" loading="lazy" decoding="async" /><figcaption class="moment-caption">台灣 Top3 航空業｜專案培訓</figcaption></figure>
+          </div>
+        </div>
       </div>
     </section>
 
